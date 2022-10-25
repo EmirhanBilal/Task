@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300&display=swap" rel="stylesheet">
+</head>
+<body id="page">
+    <div id="page-area" >
+        <h1 id="netflix">NET<span>FLIX</span></h1>
+        <p id="message">Thank you for signing up at Netflix. Tell us more about yourself.</p>
+
+        <form action="query" name="sign-form" method="get" id="sign-form">
+            <div>
+                <label for="username">Name</label>
+                <input type="text" name="username" id="username" required>
+            </div>
+            <div>
+                <label for="age">Age</label>
+                <input type="number" name="age" id="age" required>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div>
+                <label for="select">Content Type</label>
+                <select name="select" id="select" required>
+                    <option value="Movie">Movie</option>
+                    <option value="Series">Series</option>
+                </select>
+            </div>
+            <div class="checkbox">
+                <label id="check">Movie Type</label>
+                <label for="comedy"> <br>
+                    <input type="checkbox" name="comedy" id="comedy"> Comedy
+                </label>
+                <label for="action"> <br>
+                    <input type="checkbox" name="action" id="action"> Action
+                </label>
+                <label for="romance"> <br>
+                <input type="checkbox" name="romance" id="romance"> Romance
+                </label>
+            </div>
+            <div class="checkbox">
+                <label id="gender">Gender</label>
+                <label for="male"> <br>
+                    <input type="radio" name="box" id="male" required> Male
+                </label>
+                <label for="female"> <br>
+                    <input type="radio" name="box" id="female" required> Female
+                </label>
+                <label for="other"> <br>
+                <input type="radio" name="box" id="other" required> Other
+                </label>
+            </div>
+            <div>
+                <label for="ask" id="ask">Feedback</label>
+                <textarea name="ask" id="ask" cols="57" rows="7"></textarea>
+            </div>
+            <div id="button-div">
+                <button type="submit" id="sign-button">Send</button>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
